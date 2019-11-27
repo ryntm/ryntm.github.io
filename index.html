@@ -13,5 +13,22 @@
         <h1>HELLOOOO</h1>
         <p>I CAN SEEEEEEEE!</p>
     </section>
+
+    <section>
+        <button type="button" onclick="changecolor()">Change Background Color</button>
+
+
+    </section>
+
+    <script>
+        function changecolor()
+        {
+            document.body.style.backgroundColor = randomColors();
+        }
+        function randomColors()
+        {
+           return '#' + Math.floor(Math.random() * 16777215).toString(16);
+        }
+    </script>
 </body>
 </html>
